@@ -1,0 +1,9 @@
+query Menu {
+  menu {
+    id
+    name
+    price
+    description
+    image
+  }
+}

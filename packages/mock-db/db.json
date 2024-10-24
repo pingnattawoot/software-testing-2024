@@ -1,0 +1,88 @@
+{
+  "menus": [
+    {
+      "id": 1,
+      "name": "ผัดกระเพรา",
+      "price": 60,
+      "description": "ผัดกระเพราหมู ใส่ใบกระเพรา หมูสับ",
+      "image": "http://localhost:4001/assets/images/1.PadKrapow.webp"
+    },
+    {
+      "id": 2,
+      "name": "คะน้าหมูกรอบ",
+      "price": 70,
+      "description": "คะน้าหมูกรอบ ใส่พริกขี้หนู ใบคะน้า หมูกรอบ",
+      "image": "http://localhost:4001/assets/images/2.kana.jpg"
+    },
+    {
+      "id": 3,
+      "name": "ต้มยำกุ้ง",
+      "price": 120,
+      "description": "ต้มยำกุ้งน้ำข้น ใส่เห็ด กุ้ง และสมุนไพร",
+      "image": "http://localhost:4001/assets/images/3.tomyumkung.webp"
+    },
+    {
+      "id": 4,
+      "name": "ส้มตำไทย",
+      "price": 50,
+      "description": "ส้มตำไทยรสจัด ใส่มะละกอ มะเขือเทศ ถั่วฝักยาว",
+      "image": "http://localhost:4001/assets/images/4.somtumthai.webp"
+    },
+    {
+      "id": 5,
+      "name": "ข้าวผัดปู",
+      "price": 80,
+      "description": "ข้าวผัดเนื้อปู ใส่ไข่ และผักสด",
+      "image": "http://localhost:4001/assets/images/5.kaopadpu.jpg"
+    },
+    {
+      "id": 6,
+      "name": "ผัดไทย",
+      "price": 65,
+      "description": "ผัดไทยกุ้งสด ใส่ไข่ ถั่วงอก และผักชี",
+      "image": "http://localhost:4001/assets/images/6.padthai.avif"
+    },
+    {
+      "id": 7,
+      "name": "แกงเขียวหวานไก่",
+      "price": 70,
+      "description": "แกงเขียวหวานไก่ ใส่มะเขือเปราะ และโหระพา",
+      "image": "http://localhost:4001/assets/images/7.chicken-green-curry.jpg"
+    },
+    {
+      "id": 8,
+      "name": "ไก่ทอดกระเทียม",
+      "price": 75,
+      "description": "ไก่ทอดกระเทียมกรอบ เสิร์ฟพร้อมซอสพริก",
+      "image": "http://localhost:4001/assets/images/8.chicken-garlic.jpg"
+    },
+    {
+      "id": 9,
+      "name": "ยำวุ้นเส้น",
+      "price": 60,
+      "description": "ยำวุ้นเส้นกุ้งสด ใส่หมูสับ และผักสด",
+      "image": "http://localhost:4001/assets/images/9.yum-woon-sen.webp"
+    },
+    {
+      "id": 10,
+      "name": "ปลากะพงทอดน้ำปลา",
+      "price": 150,
+      "description": "ปลากะพงทอดราดน้ำปลา เสิร์ฟพร้อมผักสด",
+      "image": "http://localhost:4001/assets/images/10.pla-krapong-fish-sauce.jpg"
+    },
+    {
+      "id": 11,
+      "name": "ก๋วยเตี๋ยวต้มยำ",
+      "price": 55,
+      "description": "ก๋วยเตี๋ยวต้มยำน้ำข้น ใส่หมูสับ ลูกชิ้น และผักสด",
+      "image": "http://localhost:4001/assets/images/11.kuay-tiew-tom-yum.jpg"
+    },
+    {
+      "id": 12,
+      "name": "ข้าวมันไก่",
+      "price": 50,
+      "description": "ข้าวมันไก่ต้ม เสิร์ฟพร้อมน้ำจิ้มและซุป",
+      "image": "http://localhost:4001/assets/images/12.chicken-rice.jpg"
+    }
+  ]
+}
