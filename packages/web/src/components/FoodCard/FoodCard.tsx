@@ -25,6 +25,9 @@ export const FoodCard = ({
           <Typography variant="h6" sx={{ textAlign: "center" }}>
             {name}
           </Typography>
+          {/* <Typography variant="h6" sx={{ textAlign: "center" }}>
+            {price}฿
+          </Typography> */}
         </CardContent>
       </CardActionArea>
     </Card>

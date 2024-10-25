@@ -30,7 +30,7 @@ export const FoodDetailDialog = ({
 
   return (
     <Dialog open={open} onClose={onClose} fullWidth maxWidth="md">
-      {loading && <CircularProgress />}
+      {loading && <CircularProgress data-testid="loading-dialog" />}
       {!loading && data && (
         <>
           <DialogTitle position="relative">
@@ -51,6 +51,9 @@ export const FoodDetailDialog = ({
               image={data.menuById.image}
               alt={data.menuById.name}
             />
+            <Typography variant="h6" sx={{ mt: 2, textAlign: "center" }}>
+              {data.menuById.price}฿
+            </Typography>
             <Typography sx={{ mt: 2, textAlign: "center" }}>
               {data.menuById.description}
             </Typography>

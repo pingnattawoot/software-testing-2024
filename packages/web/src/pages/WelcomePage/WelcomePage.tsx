@@ -31,7 +31,7 @@ export const WelcomePage = () => {
             variant="h2"
             sx={{ color: theme.palette.primary.contrastText }}
           >
-            สวัสดีจ้า
+            ร้านน้องมอส สวัสดีจ้า
           </Typography>
           <Box
             component="img"
