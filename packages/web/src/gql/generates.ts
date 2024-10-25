@@ -59,6 +59,20 @@ export type MenuQuery = {
   }>;
 };
 
+export type MenuByIdQueryVariables = Exact<{
+  id: Scalars["Int"]["input"];
+}>;
+
+export type MenuByIdQuery = {
+  menuById: {
+    id: number;
+    name: string;
+    price: number;
+    description: string;
+    image: string;
+  };
+};
+
 export const MenuDocument = gql`
   query Menu {
     menu {
@@ -121,3 +135,78 @@ export type MenuSuspenseQueryHookResult = ReturnType<
   typeof useMenuSuspenseQuery
 >;
 export type MenuQueryResult = Apollo.QueryResult<MenuQuery, MenuQueryVariables>;
+export const MenuByIdDocument = gql`
+  query MenuById($id: Int!) {
+    menuById(id: $id) {
+      id
+      name
+      price
+      description
+      image
+    }
+  }
+`;
+
+/**
+ * __useMenuByIdQuery__
+ *
+ * To run a query within a React component, call `useMenuByIdQuery` and pass it any options that fit your needs.
+ * When your component renders, `useMenuByIdQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useMenuByIdQuery({
+ *   variables: {
+ *      id: // value for 'id'
+ *   },
+ * });
+ */
+export function useMenuByIdQuery(
+  baseOptions: Apollo.QueryHookOptions<MenuByIdQuery, MenuByIdQueryVariables> &
+    ({ variables: MenuByIdQueryVariables; skip?: boolean } | { skip: boolean })
+) {
+  const options = { ...defaultOptions, ...baseOptions };
+  return Apollo.useQuery<MenuByIdQuery, MenuByIdQueryVariables>(
+    MenuByIdDocument,
+    options
+  );
+}
+export function useMenuByIdLazyQuery(
+  baseOptions?: Apollo.LazyQueryHookOptions<
+    MenuByIdQuery,
+    MenuByIdQueryVariables
+  >
+) {
+  const options = { ...defaultOptions, ...baseOptions };
+  return Apollo.useLazyQuery<MenuByIdQuery, MenuByIdQueryVariables>(
+    MenuByIdDocument,
+    options
+  );
+}
+export function useMenuByIdSuspenseQuery(
+  baseOptions?:
+    | Apollo.SkipToken
+    | Apollo.SuspenseQueryHookOptions<MenuByIdQuery, MenuByIdQueryVariables>
+) {
+  const options =
+    baseOptions === Apollo.skipToken
+      ? baseOptions
+      : { ...defaultOptions, ...baseOptions };
+  return Apollo.useSuspenseQuery<MenuByIdQuery, MenuByIdQueryVariables>(
+    MenuByIdDocument,
+    options
+  );
+}
+export type MenuByIdQueryHookResult = ReturnType<typeof useMenuByIdQuery>;
+export type MenuByIdLazyQueryHookResult = ReturnType<
+  typeof useMenuByIdLazyQuery
+>;
+export type MenuByIdSuspenseQueryHookResult = ReturnType<
+  typeof useMenuByIdSuspenseQuery
+>;
+export type MenuByIdQueryResult = Apollo.QueryResult<
+  MenuByIdQuery,
+  MenuByIdQueryVariables
+>;

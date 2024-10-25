@@ -7,3 +7,13 @@ query Menu {
     image
   }
 }
+
+query MenuById($id: Int!) {
+  menuById(id: $id) {
+    id
+    name
+    price
+    description
+    image
+  }
+}
